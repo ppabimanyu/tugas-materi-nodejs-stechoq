@@ -10,5 +10,17 @@
     "nim": "bb",
     "gender": "bb",
     "city": "bb"
+  },
+  {
+    "name": "aaa",
+    "nim": "aaa",
+    "gender": "aaa",
+    "city": "aaa"
+  },
+  {
+    "name": "cc",
+    "nim": "cc",
+    "gender": "cc",
+    "city": "cc"
   }
 ]

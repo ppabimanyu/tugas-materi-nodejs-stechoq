@@ -5,17 +5,14 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 const util = require('node:util');
-const inputName = util.promisify(rl.question).bind(rl);
-const inputNim = util.promisify(rl.question).bind(rl);
-const inputGender = util.promisify(rl.question).bind(rl);
-const inputCity = util.promisify(rl.question).bind(rl);
+const question = util.promisify(rl.question).bind(rl);
 
 const main = async () => {
   try {
-    const name = await inputName('Name : ');
-    const nim = await inputNim('NIM : ');
-    const gender = await inputGender('Gender : ');
-    const city = await inputCity('City : ');
+    const name = await question('Name : ');
+    const nim = await question('NIM : ');
+    const gender = await question('Gender : ');
+    const city = await question('City : ');
     if(name.trim().length > 0 && nim.trim().length > 0 && gender.trim().length > 0 && city.trim().length > 0) {
       const data = {
         name : name,
