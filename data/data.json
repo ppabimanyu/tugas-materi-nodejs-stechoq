@@ -22,5 +22,11 @@
     "nim": "cc",
     "gender": "cc",
     "city": "cc"
+  },
+  {
+    "name": "vv",
+    "nim": "vv",
+    "gender": "vv",
+    "city": "vv"
   }
 ]

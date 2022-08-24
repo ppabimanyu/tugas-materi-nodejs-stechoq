@@ -24,7 +24,7 @@ const loadTodos = () => {
 exports.saveData = (todo) => {
   loadTodos();
   // cek duplikat todo
-  const duplicates = todos.find(item => item.name === todo.name);
+  const duplicates = todos.find(item => item.name === todo.name || item.nim === todo.nim);
   if(duplicates){
       console.log(`todo ${todo} sudah terdaftar silahkan gunakan todo lain!!`);
       return false;
